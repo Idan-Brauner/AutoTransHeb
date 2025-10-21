@@ -1,0 +1,17 @@
+{
+  "name": "stremio-translate-subtitles-addon",
+  "version": "1.0.0",
+  "description": "Stremio addon that translates subtitles (EN \u2192 HE) on-the-fly using the unofficial Google Translate endpoint.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^2.6.7",
+    "morgan": "^1.10.0",
+    "iconv-lite": "^0.6.4"
+  },
+  "author": "Custom",
+  "license": "MIT"
+}
