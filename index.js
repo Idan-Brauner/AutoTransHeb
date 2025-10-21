@@ -1,11 +1,13 @@
 // Simple Stremio-style subtitles translator service (EN -> HE)
 const express = require('express');
+const cors = require('cors');
 const fetch = require('node-fetch');
 const morgan = require('morgan');
 const fs = require('fs');
 const path = require('path');
 const iconv = require('iconv-lite');
 const app = express();
+app.use(cors());
 const PORT = process.env.PORT || 7000;
 const CACHE_DIR = path.join(__dirname, 'cache');
 if (!fs.existsSync(CACHE_DIR)) fs.mkdirSync(CACHE_DIR, { recursive: true });
